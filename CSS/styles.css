@@ -1,0 +1,155 @@
+@import url(https://fonts.google.com/specimen/Epilogue);
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(0, 0%, 41%);
+    font-family: Epilogue, sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: hsl(0, 0%, 41%);
+}
+
+a:hover {
+    color: hsl(0, 0%, 8%);
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+}
+
+.logo {
+    object-fit: contain;
+    margin-left: 20px;
+}
+
+nav li {
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+
+nav #links ul {
+    display: flex;
+}
+
+#links li {
+    margin: 0 30px;
+}
+
+#links li:first-of-type {
+    margin-left: 40px;
+}
+
+#buttons ul {
+    display: flex;
+    margin: 0 30px;
+}
+
+#buttons li {
+    margin: 0 10px;
+}
+
+#buttons li:nth-of-type(2) {
+    border: 1px hsl(0, 0%, 41%) solid;
+}
+
+main {
+    display: flex;
+    margin: 20px 200px;
+}
+
+main h1 {
+    color: hsl(0, 0%, 8%);
+    font-weight: 700;
+    font-size: 70px;
+}
+
+h1 span {
+    display: block;
+}
+
+main p {
+    width: 50%;
+}
+
+.learn-btn {
+    padding: 10px 30px;
+    color: hsl(0, 0%, 98%);
+    font-weight: 700;
+    background-color: hsl(0, 0%, 8%);
+    border-radius: 10px;
+    width: 140px;
+}
+
+.learn-btn:hover {
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(0, 0%, 8%);
+}
+
+.main-image {
+    height: 550px;
+}
+
+.details-section {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.details-section *:not(span) {
+    margin: 20px 0;
+}
+
+.clients {
+    display: flex;
+}
+
+.clients img {
+    object-fit: contain;
+    margin: 0 20px;
+    margin-top: 90px;
+}
+
+.features,
+.company {
+    background-color: #fff;
+    padding: 20px;
+    width: 150px;
+    position: absolute;
+    top: 60px;
+    border-radius: 10px;
+    -webkit-box-shadow: 10px 10px 69px -17px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 69px -17px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 69px -17px rgba(0, 0, 0, 0.75);
+}
+
+.features {
+    left: 180px;
+}
+
+.company {
+    left: 378px;
+}
+
+.features li,
+.company li {
+    margin: 7px 0;
+}
+
+.hidden {
+    display: none;
+}
